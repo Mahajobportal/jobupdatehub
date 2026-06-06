@@ -71,7 +71,7 @@ def get_jobs():
     })
 
 
-@app.route("/api/refresh", methods=["POST"])
+@app.route("/api/refresh", methods=["GET", "POST"])
 def manual_refresh():
     """Manual refresh trigger (admin use)"""
     threading.Thread(target=refresh_jobs, daemon=True).start()
