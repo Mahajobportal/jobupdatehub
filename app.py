@@ -4,7 +4,7 @@ SarkariJob MH — Flask Backend API
 Auto scrape every 6 hours
 """
 
-from flask import Flask, jsonify, request
+from flask import Flask, jsonify, request, send_from_directory
 from flask_cors import CORS
 from apscheduler.schedulers.background import BackgroundScheduler
 import json, os, threading
