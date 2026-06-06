@@ -36,7 +36,7 @@ def refresh_jobs():
 # ── Routes ───────────────────────────────────────────────
 @app.route("/")
 def home():
-    return jsonify({"status": "ok", "message": "SarkariJob MH API is running 🚀"})
+    return send_from_directory('.', 'index.html')
 
 
 @app.route("/api/jobs")
