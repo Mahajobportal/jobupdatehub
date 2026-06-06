@@ -38,7 +38,6 @@ def refresh_jobs():
 def home():
     return send_from_directory('.', 'index.html')
 
-
 @app.route("/api/jobs")
 def get_jobs():
     category = request.args.get("category", "all")
